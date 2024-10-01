@@ -10,6 +10,13 @@
 
         public static TESTID New() => new TESTID(System.Guid.NewGuid());
         public static readonly TESTID Empty = new TESTID(System.Guid.Empty);
+        public static TESTID Parse(string s) => new TESTID(System.Guid.Parse(s));
+        public static bool TryParse(string? s, out TESTID result)
+        {
+            var ok = System.Guid.TryParse(s, out var res);
+            result = new TESTID(res);
+            return ok;
+        }
 
         public bool Equals(TESTID other) => this.Value.Equals(other.Value);
         public override bool Equals(object obj)
