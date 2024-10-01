@@ -4,8 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <Nullable>enable</Nullable>
-    <PackageId>Tennisi.StronglyTypedId</PackageId>
+    <PackageId>Muchaszewski.StronglyTypedId</PackageId>
     <Description>A source generator for creating strongly-typed IDs by decorating with a [StronglyTypedId] attribute</Description>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Andrew Lock, Tomasz Juszczak</Authors>
+    <PackageProjectUrl>https://github.com/Muchaszewski/StronglyTypedId</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Muchaszewski/StronglyTypedId</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
